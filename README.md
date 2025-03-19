@@ -1,6 +1,6 @@
 ## Twitter retweets analysis
 
-<table>
+<table border="0">
   <tr>
     <td>
       <img src="images/bard.png" width="100"><br>
