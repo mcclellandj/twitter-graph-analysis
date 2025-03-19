@@ -6,13 +6,13 @@
       Bard chatbot launch 2023
       <img src="images/bard.png" width="400"><br>
       China Spy Balloon 2023
-      <img src="images/ChinaSpyBalloon.png" width="350"><br>
+      <img src="images/ChinaSpyBalloon.png" width="400"><br>
       Eurovison song contest 2023
-      <img src="images/Eurovision.png" width="350"><br>
+      <img src="images/Eurovision.png" width="400"><br>
       Nurses strike of 2023
-      <img src="images/NursesStrike.png"" width="350"><br>
+      <img src="images/NursesStrike.png"" width="400"><br>
       Six Nations Rugby tournament 2023
-      <img src="images/SixNations.png" width="350">
+      <img src="images/SixNations.png" width="400">
     </td>
     <td style="vertical-align: top; padding-left: 20px; border: none;">
       <p>
