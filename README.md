@@ -3,11 +3,11 @@
 <table>
   <tr>
     <td>
-      <img src="images/bard.png" width="100"><br>
-      <img src="images/ChinaSpyBalloon.png" width="100"><br>
-      <img src="images/Eurovision.png" width="100"><br>
-      <img src="images/NursesStrike.png"" width="100"><br>
-      <img src="images/SixNations.png" width="100">
+      <img src="images/bard.png" width="350" height="350"><br>
+      <img src="images/ChinaSpyBalloon.png" width="350" height="350"><br>
+      <img src="images/Eurovision.png" width="350" height="350"><br>
+      <img src="images/NursesStrike.png"" width="350" height="350"><br>
+      <img src="images/SixNations.png" width="350" height="350">
     </td>
     <td style="vertical-align: top; padding-left: 20px; border: none;">
       <p>
