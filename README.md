@@ -7,7 +7,7 @@
 <img src="images/NursesStrike.png" alt="nurses" align="left" width="350" height="350"/> 
 <img src="images/SixNations.png" alt="sixnations" align="left" width="350" height="350"/> 
 
- !["bard"](images/bard.png)
+ !["bard"](images/bard.png  align="left" width="350" height="350")
  !["chinaspyballoon"](images/ChinaSpyBalloon.png)
  !["eurovision.png"](images/Eurovision.png)
  !["NursesStrike"](images/NursesStrike.png)
