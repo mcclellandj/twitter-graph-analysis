@@ -1,11 +1,5 @@
 ## Twitter retweets analysis
 
-<style>
-  table, tr, td {
-    border: none !important;
-  }
-</style>
-
 <table>
   <tr>
     <td>
