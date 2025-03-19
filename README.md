@@ -1,6 +1,6 @@
 ## Twitter retweets analysis
 
-<div style="display: flex; align-items: start;">
+<div style="display: flex; align-items: flex-start;">
   <div>
     <img src="images/bard.png" width="100"><br>
     <img src="images/ChinaSpyBalloon.png" width="100"><br>
