@@ -3,15 +3,15 @@
 <table>
   <tr>
     <td>
-      Bard chatbot launch 2023
+      <h3>Bard chatbot launch 2023</h3>
       <img src="images/bard.png" width="350"><br>
       China Spy Balloon 2023
       <img src="images/ChinaSpyBalloon.png" width="350"><br>
-      ###Eurovison song contest 2023
+      Eurovison song contest 2023
       <img src="images/Eurovision.png" width="350"><br>
-      ###Nurses strike of 2023
+      Nurses strike of 2023
       <img src="images/NursesStrike.png"" width="350"><br>
-      ###Six Nations Rugby tournament 2023
+      Six Nations Rugby tournament 2023
       <img src="images/SixNations.png" width="350">
     </td>
     <td style="vertical-align: top; padding-left: 20px; border: none;">
