@@ -1,8 +1,14 @@
 ## Twitter retweets analysis
 
-<table style="border-collapse: collapse; border: none;">
-  <tr style="border: none;">
-    <td style="border: none;">
+<style>
+  table, tr, td {
+    border: none !important;
+  }
+</style>
+
+<table>
+  <tr>
+    <td>
       <img src="images/bard.png" width="100"><br>
       <img src="images/ChinaSpyBalloon.png" width="100"><br>
       <img src="images/Eurovision.png" width="100"><br>
