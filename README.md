@@ -3,7 +3,7 @@
 <table>
   <tr>
     <td>
-      <h3>Bard chatbot launch 2023</h3>
+      <h3><small>Bard chatbot launch 2023</small></h3>
       <img src="images/bard.png" width="350"><br>
       China Spy Balloon 2023
       <img src="images/ChinaSpyBalloon.png" width="350"><br>
