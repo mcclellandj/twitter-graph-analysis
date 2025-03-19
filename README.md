@@ -4,7 +4,7 @@
   <tr>
     <td>
       Bard chatbot launch 2023
-      <img src="images/bard.png" width="350"><br>
+      <img src="images/bard.png" width="400"><br>
       China Spy Balloon 2023
       <img src="images/ChinaSpyBalloon.png" width="350"><br>
       Eurovison song contest 2023
