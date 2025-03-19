@@ -1,15 +1,15 @@
 ## Twitter retweets analysis
 
-<table border="0">
-  <tr>
-    <td>
+<table style="border-collapse: collapse; border: none;">
+  <tr style="border: none;">
+    <td style="border: none;">
       <img src="images/bard.png" width="100"><br>
       <img src="images/ChinaSpyBalloon.png" width="100"><br>
       <img src="images/Eurovision.png" width="100"><br>
       <img src="images/NursesStrike.png"" width="100"><br>
       <img src="images/SixNations.png" width="100">
     </td>
-    <td style="vertical-align: top; padding-left: 20px;">
+    <td style="vertical-align: top; padding-left: 20px; border: none;">
       <p>
         This is where you can write your text. It will appear aligned to the top of the images.
         You can add multiple paragraphs and style it as needed.
