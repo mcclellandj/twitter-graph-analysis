@@ -1,4 +1,4 @@
-## Retweets analysis
+## Retweet analysis
 
 <table>
   <tr>
