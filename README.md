@@ -2,33 +2,33 @@
 
 <table>
 <td>
-  <div style="text-align: center;">
-    <img src="images/bard.png" width="200">
+  <div style="text-align: left;">
     <p>Bard Chatbot Launch</p>
+    <img src="images/bard.png" width="200">
   </div>
 </td>
 <td>
-  <div style="text-align: center;">
-    <img src="images/ChinaSpyBalloon.png" width="200">
+  <div style="text-align: left;">
     <p>China Spy Balloon</p>
+    <img src="images/ChinaSpyBalloon.png" width="200">
   </div>
 </td>
 <td>
-  <div style="text-align: center;">
-    <img src="images/Eurovision.png" width="200">
+  <div style="text-align: left;">
     <p>Eurovision Song Competition</p>
+    <img src="images/Eurovision.png" width="200">
   </div>
 </td>
 <td>
-  <div style="text-align: center;">
-    <img src="images/NursesStrike.png" width="200">
+  <div style="text-align: left;">
     <p>UK Nurses Strike</p>
+    <img src="images/NursesStrike.png" width="200">
   </div>
 </td>
 <td>
-  <div style="text-align: center;">
-    <img src="images/SixNations.png" width="200">
+  <div style="text-align: left;">
     <p>Six Nations Rugby Championship</p>
+    <img src="images/SixNations.png" width="200">
   </div>
 </td> 
 </table>
