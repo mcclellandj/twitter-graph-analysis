@@ -1,7 +1,5 @@
 ## Retweeting analysis
 
-Image(filename='images/bard.png',width=1000,height=1000)
-
 <table>
   <tr>
     <th>Bard Chatbot Launch 2023</th>
@@ -21,8 +19,17 @@ Image(filename='images/bard.png',width=1000,height=1000)
 
 ### Project objectives
 
-1. Build a model to predict a person's expected remuneration for any role in the STEM sector based on attribute profiles of the role and the person
-2. Use big data tools to build the model to enable efficient processing of data features comprising extreme cardinality
+Compare the graphs of 5 different Twitter hash tags in terms of:
+
+- Ability to diffuse information
+- Node and link structure
+- Presence of nefarious bot/misinformation behaviour
+
+The social networks analysed are Twitter retweet networks.
+
+A hashtag relating to a significant current event was selected from each of the domains of: sports; music; international affairs; politics; and science. It is expected that the resulting social networks for these conversations will involve different types of users engaging in the conversations and hence have different structures. For instance, hashtags for sports and music may have larger networks due to being popular cultural domains with mass media exposure and users may include influential stars of sports and music. Hashtags for international affairs, politics and science are expected to have narrower audiences and involve niche interest groups and government agencies involved in the conversations and may be more likely to involve echo chambers with some users dominating conversations.
+
+The analysis undertaken by this project follows the Social Media Analytics Process approach (Ganis & Kohirkar, 2015).
   
 ### Analysis approach
 
