@@ -1,31 +1,46 @@
 ## Twitter graph analysis
 
-<table style="width: 100%; table-layout: fixed;">
+<table>
   <tr>
-    <td style="vertical-align: top; padding: 0; text-align: left; display: flex; flex-direction: column; justify-content: flex-start;">
-      <p style="margin: 0;">Bard Chatbot Launch</p>
-      <img src="images/bard.png" width="200">
+    <th style="vertical-align: top;">Bard Chatbot Launch 2023</th>
+    <th style="vertical-align: top;">China Spy Balloon 2023</th>
+    <th style="vertical-align: top;">Eurovision Song Contest 2023</th>
+    <th style="vertical-align: top;">Nurses Strike of 2023</th>
+    <th style="vertical-align: top;">Six Nations Rugby Tournament 2023</th>
+  </tr>
+  <tr>
+    <td>
+      <figure>
+        <img src="images/bard.png" width="200" alt="Bard Chatbot Launch 2023">
+        <figcaption>Bard Chatbot Launch 2023</figcaption>
+      </figure>
     </td>
-    <td style="vertical-align: top; padding: 0; text-align: left; display: flex; flex-direction: column; justify-content: flex-start;">
-      <p style="margin: 0;">China Spy Balloon</p>
-      <img src="images/ChinaSpyBalloon.png" width="200">
+    <td>
+      <figure>
+        <img src="images/ChinaSpyBalloon.png" width="200" alt="China Spy Balloon 2023">
+        <figcaption>China Spy Balloon 2023</figcaption>
+      </figure>
     </td>
-    <td style="vertical-align: top; padding: 0; text-align: left; display: flex; flex-direction: column; justify-content: flex-start;">
-      <p style="margin: 0;">Eurovision Song Competition</p>
-      <img src="images/Eurovision.png" width="200">
+    <td>
+      <figure>
+        <img src="images/Eurovision.png" width="200" alt="Eurovision Song Contest 2023">
+        <figcaption>Eurovision Song Contest 2023</figcaption>
+      </figure>
     </td>
-    <td style="vertical-align: top; padding: 0; text-align: left; display: flex; flex-direction: column; justify-content: flex-start;">
-      <p style="margin: 0;">UK Nurses Strike</p>
-      <img src="images/NursesStrike.png" width="200">
+    <td>
+      <figure>
+        <img src="images/NursesStrike.png" width="200" alt="Nurses Strike of 2023">
+        <figcaption>Nurses Strike of 2023</figcaption>
+      </figure>
     </td>
-    <td style="vertical-align: top; padding: 0; text-align: left; display: flex; flex-direction: column; justify-content: flex-start;">
-      <p style="margin: 0;">Six Nations Rugby Championship</p>
-      <img src="images/SixNations.png" width="200">
+    <td>
+      <figure>
+        <img src="images/SixNations.png" width="200" alt="Six Nations Rugby Tournament 2023">
+        <figcaption>Six Nations Rugby Tournament 2023</figcaption>
+      </figure>
     </td>
   </tr>
 </table>
-
-
 
 ### Project objectives
 
