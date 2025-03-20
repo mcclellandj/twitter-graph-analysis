@@ -11,27 +11,27 @@
   <tr>
     <td>
       <figure>
-        <img src="images/bard.png" width="200" alt="Bard Chatbot Launch 2023">
+        <img src="images/bard.png" width="200" alt="Bard Chatbot Launch">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="images/ChinaSpyBalloon.png" width="200" alt="China Spy Balloon 2023">
+        <img src="images/ChinaSpyBalloon.png" width="200" alt="China Spy Balloon">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="images/Eurovision.png" width="200" alt="Eurovision Song Contest 2023">
+        <img src="images/Eurovision.png" width="200" alt="Eurovision Song Contest">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="images/NursesStrike.png" width="200" alt="Nurses Strike of 2023">
+        <img src="images/NursesStrike.png" width="200" alt="Nurses Strike">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="images/SixNations.png" width="200" alt="Six Nations Rugby Tournament 2023">
+        <img src="images/SixNations.png" width="200" alt="Six Nations Rugby">
       </figure>
     </td>
   </tr>
@@ -39,13 +39,19 @@
 
 ### Project objectives
 
-Compare the Twitter hashtag graphs of five significant current events in terms of:
+Compare the ability of different Twitter graphs to transmit information. Namely, 
 
 - Ability to diffuse information
 - Node and link structure
-- Nefarious bot/misinformation behaviour
+- Use of bots
 
-The hashtags considered cover technology (#bard), international affairs (#ChinaSpyBallon), entertainment (#Eurovision2023), politics (#NursesStrike) and sports (#SixNations2023)
+The hashtags selected are from different current affairs, namely: 
+
+- technology (#bard)
+- international affairs (#ChinaSpyBalloon)
+- entertainment (#Eurovision2023)
+- politics (#NursesStrike)
+- sports (#SixNations2023)
   
 ### Analysis approach
 
