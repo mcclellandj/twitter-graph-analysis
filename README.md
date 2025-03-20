@@ -2,7 +2,7 @@
 
 <table>
   <tr>
-    <th style="vertical-align: top; font-weight: normal;">Bard Chatbot Launch</th>
+    <th style="vertical-align: top; font-weight: normal; text-align: left;">Bard Chatbot Launch</th>
     <th style="vertical-align: top; font-weight: normal;">China Spy Balloon</th>
     <th style="vertical-align: top; font-weight: normal;">Eurovision Contest</th>
     <th style="vertical-align: top; font-weight: normal;">Nurses Strike</th>
