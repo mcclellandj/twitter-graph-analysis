@@ -150,7 +150,7 @@ The k-core decomposition graphs show very different structures when stripped of 
 
 2. If this analysis was to be repeated, future approaches could include:
    
-  - Taking larger data extracts to help ensure data is not biased
-  - Consider only tweets from verified (blue tick) users to remove nefarious bots or instead checking metadata of each user for clears signs of fake accounts such as absence of photo, links, or any bio information, etc
+   - Taking larger data extracts to help ensure data is not biased
+   - Consider only tweets from verified (blue tick) users to remove nefarious bots or instead checking metadata of each user for clears signs of fake accounts such as absence of photo, links, or any bio information, etc
 
 
