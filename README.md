@@ -39,7 +39,7 @@
 
 ### Project objectives
 
-Compare the graphs of the Twitter hash tags of five significant current events in terms of:
+Compare the Twitter hashtags of five significant current events in terms of:
 
 - Ability to diffuse information
 - Node and link structure
