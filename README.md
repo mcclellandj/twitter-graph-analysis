@@ -1,3 +1,9 @@
+<style>
+  th, td {
+    vertical-align: top;
+  }
+</style>
+
 <table>
   <tr>
     <th>Bard Chatbot Launch 2023</th>
