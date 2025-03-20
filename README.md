@@ -1,4 +1,4 @@
-## Retweeting analysis
+## Twitter graph analysis
 
 <table>
   <tr>
