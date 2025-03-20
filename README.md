@@ -9,20 +9,20 @@
 </td>
 <td>
   <div style="text-align: center;">
-    <img src="images/ChinaSpyBalloon.pn" width="200">
+    <img src="images/ChinaSpyBalloon.png" width="200">
     <p>China Spy Balloon</p>
   </div>
 </td>
 <td>
   <div style="text-align: center;">
     <img src="images/Eurovision.png" width="200">
-    <p>images/Eurovision.png</p>
+    <p>Eurovision Song Competition</p>
   </div>
 </td>
 <td>
   <div style="text-align: center;">
     <img src="images/NursesStrike.png" width="200">
-    <p>images/Nurses Strike.png</p>
+    <p>UK Nurses Strike</p>
   </div>
 </td>
 <td>
