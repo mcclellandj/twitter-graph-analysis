@@ -1,45 +1,52 @@
 <table>
   <tr>
     <td>
-      Bard chatbot launch 2023
-      <img src="images/bard.png" width="500"><br>
-      China Spy Balloon 2023
-      <img src="images/ChinaSpyBalloon.png" width="500"><br>
-      Eurovison song contest 2023
-      <img src="images/Eurovision.png" width="500"><br>
-      Nurses strike of 2023
-      <img src="images/NursesStrike.png"" width="500"><br>
-      Six Nations Rugby tournament 2023
+      <p><strong>Bard chatbot launch 2023</strong></p>
+      <img src="images/bard.png" width="500"><br><br>
+      <p><strong>China Spy Balloon 2023</strong></p>
+      <img src="images/ChinaSpyBalloon.png" width="500"><br><br>
+      <p><strong>Eurovision Song Contest 2023</strong></p>
+      <img src="images/Eurovision.png" width="500"><br><br>
+      <p><strong>Nurses Strike of 2023</strong></p>
+      <img src="images/NursesStrike.png" width="500"><br><br>
+      <p><strong>Six Nations Rugby Tournament 2023</strong></p>
       <img src="images/SixNations.png" width="500">
     </td>
     <td style="vertical-align: top; padding-left: 20px; border: none;">
-      <p>
-        Predicting annual remuneration for STEM professionals
-        
-        Project objectives
-        
-        1. Build a model to predict a person's expected remuneration for any role in the STEM sector based on attribute profiles of the role and the person
-        2. Use big data tools to build the model to enable efficient processing of data features comprising extreme cardinality
-          
-        Analysis approach
-        
-        Using PySpark, PySpark SQL and Python where appropriate in a Jupyter Notebook to:
-        1. Create a Spark session on an available Cluster and upload the data onto Hadoop Distributed File System
-        2. Convert the data into a dataframe ahead of analysis and undertake a data audit and exploratory data analysis to gain insights on the main features
-        3. Clean and transform the data as required and build new features
-        4. Use Spark ML to create transformers and estimators to build predictive models
-        5. Create pipelines to find the best predictive model using different algorithms, different number of input features and hyperparameter tuning
-        6. Contemplate what extra steps could make the final model better
-        
-        cf. code 'stem-jobs-salary-prediction.ipynb'
-        
-        Results/findings
-        
-        a. The best model was a Gradient Boosted Trees (GBT) regressor model which explained 64% of the variance and had a high RMSE
-        b. To improve the model tried re-training the GBT regressor over various numbers of features (10, 20, 30,...) using feature importance rankings and tuning the hyperparameters of each using grid search and Spark ML CrossValidator. This increased the explained variance by 0.5 percentage points
-        c. The top features in terms of feature importance were generally intuitive. For example 'years of experience', 'years at company', job titles involving 'software engineering', place of work being 'Google', tag of 'AI/ML', holding a 'PhD' are all significant drivers of higher remuneration. However, a counter intuitive finding was the work 'location' outside of California having a higher feature ranking than 'location' of California. The features of 'race' and 'gender' are quite low in the feature importance rankings
-     </p>
+      <h2>Predicting Annual Remuneration for STEM Professionals</h2>
+
+      <h3>Project Objectives</h3>
+      <ol>
+        <li>Build a model to predict a person's expected remuneration for any role in the STEM sector based on attribute profiles of the role and the person.</li>
+        <li>Use big data tools to build the model to enable efficient processing of data features comprising extreme cardinality.</li>
+      </ol>
+
+      <h3>Analysis Approach</h3>
+      <p>Using PySpark, PySpark SQL, and Python where appropriate in a Jupyter Notebook:</p>
+      <ol>
+        <li>Create a Spark session on an available cluster and upload the data onto Hadoop Distributed File System.</li>
+        <li>Convert the data into a dataframe ahead of analysis and undertake a data audit and exploratory data analysis to gain insights on the main features.</li>
+        <li>Clean and transform the data as required and build new features.</li>
+        <li>Use Spark ML to create transformers and estimators to build predictive models.</li>
+        <li>Create pipelines to find the best predictive model using different algorithms, different numbers of input features, and hyperparameter tuning.</li>
+        <li>Contemplate what extra steps could make the final model better.</li>
+      </ol>
+
+      <h3>Results/Findings</h3>
+      <ul>
+        <li><strong>The best model</strong> was a Gradient Boosted Trees (GBT) regressor model, which explained 64% of the variance but had a high RMSE.</li>
+        <li>To improve the model, we re-trained the GBT regressor over various numbers of features (10, 20, 30, etc.) using feature importance rankings and tuning hyperparameters via grid search and Spark ML CrossValidator. This increased the explained variance by 0.5 percentage points.</li>
+        <li>Top features in terms of feature importance were generally intuitive:
+          <ul>
+            <li>'Years of experience', 'years at company', and job titles involving 'software engineering' were strong predictors.</li>
+            <li>Working at 'Google', having an 'AI/ML' tag, and holding a 'PhD' correlated with higher remuneration.</li>
+            <li>Unexpectedly, 'location' outside of California had a higher feature ranking than 'location' in California.</li>
+            <li>'Race' and 'gender' had low importance rankings.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p>cf. code <code>stem-jobs-salary-prediction.ipynb</code></p>
     </td>
   </tr>
 </table>
-
