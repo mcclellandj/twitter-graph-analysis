@@ -17,6 +17,12 @@
      <td style="vertical-align: top; padding-left: 20px; border: none;">
        <p>
          Predicting annual remuneration for STEM professionals
+
+         Project objectives
+
+         Analysis approach
+
+         Results/Analysis
          
          Project objectives
          
