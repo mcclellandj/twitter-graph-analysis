@@ -1,5 +1,7 @@
 ## Retweeting analysis
 
+Image(filename='images/bard.png',width=1000,height=1000)
+
 <table>
   <tr>
     <th>Bard Chatbot Launch 2023</th>
