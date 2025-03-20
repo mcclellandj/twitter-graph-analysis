@@ -57,19 +57,19 @@ The hashtags selected are from different current events from 2023, namely:
 
 cf. code 'hashtag_graphs.ipynb'
 
-#### a. Hash tag identification
+#### 1. Hash tag identification
 
 By conducting keyword searches using the Python Twitter API and comparing the results with the hash tag used by the primary media outlet covering the event, the primary hashtag for each current event could be determined
 
-#### b. Tweet extraction
+#### 2. Tweet extraction
 
 Using the python Twitter API, 25,000 tweets per event were extracted including a mix of popular and recent tweets and stored in JSON format
 
-#### c. Graph visualization
+#### 3. Graph visualization
 
 Using the python packages of pyvis and networkx the graphs were constructed. For visualization purposes higher order k-core shell visualizations have been created, whereby for any given k, all nodes with k-1 neighbours and its related edge are removed. The size of k was chosen manually for each hashtag after an iterative process
 
-#### d. Calculation of metrics
+#### 4. Calculation of metrics
 
 The following metrics were calculated for each graph
 
@@ -118,13 +118,13 @@ Users can retweet various numbers of other users. This information, along with t
 
 ### Results/findings
 
-#### Network size
+#### 1. Network size
 
 - There is a significant difference in the size of the networks with the #NursesStrike and #ChinaSpyBalloon conversations having by far the largest number of users - 3.5K users for both compared to 2.4K for both #EuroVision2023 and #bard and 1.8K users for #SixNations2023. This intuitively makes sense given the potential sizes of audience - a pause on NHS services affects most of the UK population while the Six Nations Rugby tournament is a niche sport
 
 - There is an inverse relationship between the numbers of retweeted and retweeter users in each network. Those with the highest proportion of retweeters have the lowest proportion of retweeted users suggesting that in these networks (proportionally) fewer users are generating the retweeted content. In the #NursesStrike conversation 95% of users are retweeters while only 6% of users had their content retweeted whereas for the #bard conversation only 78% of users are retweeters but 25% were retweeted
 
-#### Network connectivity
+#### 2. Network connectivity
 
 The k-core decomposition graphs show very different structures when stripped of their periphery shells and these are also reflected in the network metrics for their full compositions. Note that these decompositions strip away a significant proportion of user nodes and links. They are all neither strongly or weakly connected networks. The largest strongly connected component in each comprises between only 1 and 4 users. In terms of weakly connected components, the #NursesStrike and #Eurovision2023 networks comprise the fewest number of weakly connected components and their largest weakly connected component comprise 95% and 82% of all their users respectively meaning the majority of these two networks would be fully connected if the graphs were undirected. In comparison the other three networks are made up of significantly more weakly connected components with their largest comprising between only 30% and 59% of all users
 
@@ -132,7 +132,7 @@ The k-core decomposition graphs show very different structures when stripped of 
 
 - There is evidence of ego sub-networks and echo chambers in each network, particularly for #SixNations2023 and #bard where the k-core decomposition graphs show standalone components acting as such with significant numbers of users retweeting the content of very few users while excluding all other users. This is possibly a reflection of all the networks being disassortative (with their degree assortativity coefficients being less than 0) meaning that high degree users are connecting to low degree users and conversely low degree users are connecting to high degree users
 
-#### Node information diffusion
+#### 3. Node information diffusion
 
 - Users in the #SixNations2023, #ChinaSpyBalloon and #NursesStrike all have significantly higher number of followers with an average of 572, 547 and 515 respectively compared to users in the #Eurovision and #bard conversations with only 375 and 267 respectively
 
@@ -146,9 +146,10 @@ The k-core decomposition graphs show very different structures when stripped of 
 
 ### Summary of findings
 
-- The observations above in terms of density and not being strongly/weakly connected are to be expected for retweet networks which are defined only by one-way relationships (transmission of tweets from retweeted to retweeter) instead of two-way relationships which occur in social media applications like Facebook. All of the networks differ in size and structure, most notably the number of weakly connected components they have, the heterogeneity in the distribution of their in-degree strength and in terms of centrality scores for the top 10 nodes showing that some networks rely more on some nodes for diffusion of information than others. There is clear evidence of influencers in each network in terms of their high out-degree strength (being retweeted) and their large number of followers as well as some high viral users. There is also indications of bots in action particularly for #ChinaSpyBalloon
+1. The observations above in terms of density and not being strongly/weakly connected are to be expected for retweet networks which are defined only by one-way relationships (transmission of tweets from retweeted to retweeter) instead of two-way relationships which occur in social media applications like Facebook. All of the networks differ in size and structure, most notably the number of weakly connected components they have, the heterogeneity in the distribution of their in-degree strength and in terms of centrality scores for the top 10 nodes showing that some networks rely more on some nodes for diffusion of information than others. There is clear evidence of influencers in each network in terms of their high out-degree strength (being retweeted) and their large number of followers as well as some high viral users. There is also indications of bots in action particularly for #ChinaSpyBalloon
 
-- If this analysis was to be repeated, future approaches could include:
+2. If this analysis was to be repeated, future approaches could include:
+   
   - Taking larger data extracts to help ensure data is not biased
   - Consider only tweets from verified (blue tick) users to remove nefarious bots or instead checking metadata of each user for clears signs of fake accounts such as absence of photo, links, or any bio information, etc
 
