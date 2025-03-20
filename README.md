@@ -1,14 +1,36 @@
 ## Twitter graph analysis
 
 <table>
-
-  <tr>
-    <td><img src="images/bard.png" width="200" bard></td>
-    <td><img src="images/ChinaSpyBalloon.png" width="200"></td>
-    <td><img src="images/Eurovision.png" width="200"></td>
-    <td><img src="images/NursesStrike.png" width="200"></td>
-    <td><img src="images/SixNations.png" width="200"></td>
-  </tr>
+<td>
+  <div style="text-align: center;">
+    <img src="images/bard.png" width="200">
+    <p>Bard Chatbot Launch</p>
+  </div>
+</td>
+<td>
+  <div style="text-align: center;">
+    <img src="images/ChinaSpyBalloon.pn" width="200">
+    <p>China Spy Balloon</p>
+  </div>
+</td>
+<td>
+  <div style="text-align: center;">
+    <img src="images/Eurovision.png" width="200">
+    <p>images/Eurovision.png</p>
+  </div>
+</td>
+<td>
+  <div style="text-align: center;">
+    <img src="images/NursesStrike.png" width="200">
+    <p>images/Nurses Strike.png</p>
+  </div>
+</td>
+<td>
+  <div style="text-align: center;">
+    <img src="images/SixNations.png" width="200">
+    <p>Six Nations Rugby Championship</p>
+  </div>
+</td> 
 </table>
 
 ### Project objectives
