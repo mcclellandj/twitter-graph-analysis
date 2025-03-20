@@ -2,7 +2,7 @@
 
 <table>
   <tr>
-    <th>Bard Chatbot Launch 2023</th>
+
     <th>China Spy Balloon 2023</th>
     <th>Eurovision Song Contest 2023</th>
     <th>Nurses Strike 2023</th>
