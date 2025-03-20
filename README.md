@@ -1,6 +1,6 @@
 <table>
   <tr>
-    <th style="white-space: nowrap; width: 1200px; text-align: left;font-size: 12px;">Bard Chatbot Launch 2023</th>
+    <th style="white-space: nowrap; width: 900px; text-align: left;font-size: 12px;">Bard Chatbot Launch 2023</th>
     <th style="white-space: nowrap; width: 900px; text-align: left;font-size: 12px;">China Spy Balloon 2023</th>
     <th style="white-space: nowrap; width: 900px; text-align: left;font-size: 12px;">Eurovision Song Contest 2023</th>
     <th style="white-space: nowrap; width: 900px; text-align: left;font-size: 12px;">Nurses Strike of 2023</th>
