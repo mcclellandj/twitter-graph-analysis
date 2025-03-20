@@ -1,36 +1,38 @@
 ## Twitter graph analysis
 
 <table>
-<td>
-  <div style="text-align: left;">
-    <p>Bard Chatbot Launch</p>
-    <img src="images/bard.png" width="200">
-  </div>
-</td>
-<td>
-  <div style="text-align: left;">
-    <p>China Spy Balloon</p>
-    <img src="images/ChinaSpyBalloon.png" width="200">
-  </div>
-</td>
-<td>
-  <div style="text-align: left;">
-    <p>Eurovision Song Competition</p>
-    <img src="images/Eurovision.png" width="200">
-  </div>
-</td>
-<td>
-  <div style="text-align: left;">
-    <p>UK Nurses Strike</p>
-    <img src="images/NursesStrike.png" width="200">
-  </div>
-</td>
-<td>
-  <div style="text-align: left;">
-    <p>Six Nations Rugby Championship</p>
-    <img src="images/SixNations.png" width="200">
-  </div>
-</td> 
+  <tr>
+    <td style="vertical-align: top; padding: 0;">
+      <div style="text-align: left; margin: 0;">
+        <p style="margin: 0;">Bard Chatbot Launch</p>
+        <img src="images/bard.png" width="200">
+      </div>
+    </td>
+    <td style="vertical-align: top; padding: 0;">
+      <div style="text-align: left; margin: 0;">
+        <p style="margin: 0;">China Spy Balloon</p>
+        <img src="images/ChinaSpyBalloon.png" width="200">
+      </div>
+    </td>
+    <td style="vertical-align: top; padding: 0;">
+      <div style="text-align: left; margin: 0;">
+        <p style="margin: 0;">Eurovision Song Competition</p>
+        <img src="images/Eurovision.png" width="200">
+      </div>
+    </td>
+    <td style="vertical-align: top; padding: 0;">
+      <div style="text-align: left; margin: 0;">
+        <p style="margin: 0;">UK Nurses Strike</p>
+        <img src="images/NursesStrike.png" width="200">
+      </div>
+    </td>
+    <td style="vertical-align: top; padding: 0;">
+      <div style="text-align: left; margin: 0;">
+        <p style="margin: 0;">Six Nations Rugby Championship</p>
+        <img src="images/SixNations.png" width="200">
+      </div>
+    </td>
+  </tr>
 </table>
 
 ### Project objectives
