@@ -1,4 +1,3 @@
-```html
 <table>
   <tr>
     <td>
