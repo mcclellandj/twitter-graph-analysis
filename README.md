@@ -55,6 +55,8 @@ The hashtags selected are from different current events from 2023, namely:
   
 ### Analysis approach
 
+cf. code 'hashtag_graphs.ipynb'
+
 #### a. Hash tag identification
 
 By conducting keyword searches using the Python Twitter API and comparing the results with the hash tag used by the primary media outlet covering the event, the primary hashtag for each current event could be determined
@@ -113,8 +115,6 @@ Users can retweet various numbers of other users. This information, along with t
 - top 10 users retweeted by out-degree strength
 - top 10 users retweeting by in-degree strength
 - percentile distribution of users by virality score (for users with at least 1,000 followers)  
-
-cf. code 'hashtag_graphs.ipynb'
 
 ### Results/findings
 
