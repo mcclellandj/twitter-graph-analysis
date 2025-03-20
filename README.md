@@ -7,7 +7,7 @@
     <td>Six Nations Rugby Tournament 2023<br><img src="images/SixNations.png" width="500"></td>
   </tr>
   <tr>
-    <td colspan="5" style="padding: 20px; text-align: left; vertical-align: top;">
+    <td colspan="5" style="text-align: left; vertical-align: top;">
       <!-- Additional content here -->
     </td>
   </tr>
