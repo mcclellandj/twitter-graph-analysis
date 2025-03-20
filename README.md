@@ -2,11 +2,11 @@
 
 <table>
   <tr>
-    <th style="vertical-align: top;">Bard Chatbot Launch</th>
-    <th style="vertical-align: top;">China Spy Balloon</th>
-    <th style="vertical-align: top;">Eurovision Contest</th>
-    <th style="vertical-align: top;">Nurses Strike</th>
-    <th style="vertical-align: top;">Six Nations Rugby</th>
+    <th style="vertical-align: top; font-weight: normal;">Bard Chatbot Launch</th>
+    <th style="vertical-align: top; font-weight: normal;">China Spy Balloon</th>
+    <th style="vertical-align: top; font-weight: normal;">Eurovision Contest</th>
+    <th style="vertical-align: top; font-weight: normal;">Nurses Strike</th>
+    <th style="vertical-align: top; font-weight: normal;">Six Nations Rugby</th>
   </tr>
   <tr>
     <td>
