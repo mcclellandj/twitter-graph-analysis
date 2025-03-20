@@ -1,45 +1,92 @@
 <style>
-  .table-container {
-    width: 100%; /* Allows the table to take full width */
-    overflow-x: auto; /* Enables horizontal scrolling */
-    white-space: nowrap; /* Prevents wrapping */
+  /* Scrollable image container */
+  .image-scroll {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd; /* Optional: separates sections */
   }
 
-  table {
-    width: max-content; /* Ensures the table expands based on content */
-    border-collapse: collapse;
-  }
-
-  td {
-    width: 520px; /* Adjust cell width */
-    height: 550px; /* Adjust cell height */
+  /* Each image block */
+  .image-item {
+    display: inline-block;
     text-align: center;
-    vertical-align: middle;
-    padding: 10px;
-    border: 1px solid #ddd; /* Optional border */
+    padding: 0 10px;
   }
 
-  img {
-    width: 500px;
-    height: 500px;
-    object-fit: cover; /* Ensures full coverage without distortion */
+  .image-item img {
+    width: 300px; /* Adjust as needed */
+    height: auto;
+  }
+
+  /* Content section */
+  .content {
+    max-width: 900px; /* Limits width for better readability */
+    margin: 20px auto;
+    padding: 20px;
   }
 </style>
 
-<div class="table-container">
-  <table>
-    <tr>
-      <td><strong>Bard Chatbot Launch 2023</strong><br><img src="images/bard.png"></td>
-      <td><strong>China Spy Balloon 2023</strong><br><img src="images/ChinaSpyBalloon.png"></td>
-      <td><strong>Eurovision Song Contest 2023</strong><br><img src="images/Eurovision.png"></td>
-      <td><strong>Nurses Strike of 2023</strong><br><img src="images/NursesStrike.png"></td>
-      <td><strong>Six Nations Rugby Tournament 2023</strong><br><img src="images/SixNations.png"></td>
-    </tr>
-    <tr>
-      <td colspan="5" style="padding: 20px; text-align: left; vertical-align: top;">
-        <h2>Additional Content Here</h2>
-      </td>
-    </tr>
-  </table>
+<!-- Scrollable image section -->
+<div class="image-scroll">
+  <div class="image-item">
+    <strong>Bard Chatbot Launch 2023</strong><br>
+    <img src="images/bard.png">
+  </div>
+  <div class="image-item">
+    <strong>China Spy Balloon 2023</strong><br>
+    <img src="images/ChinaSpyBalloon.png">
+  </div>
+  <div class="image-item">
+    <strong>Eurovision Song Contest 2023</strong><br>
+    <img src="images/Eurovision.png">
+  </div>
+  <div class="image-item">
+    <strong>Nurses Strike of 2023</strong><br>
+    <img src="images/NursesStrike.png">
+  </div>
+  <div class="image-item">
+    <strong>Six Nations Rugby Tournament 2023</strong><br>
+    <img src="images/SixNations.png">
+  </div>
+</div>
+
+<!-- Regular Markup for the Second Section -->
+<div class="content">
+  <h2>Predicting Annual Remuneration for STEM Professionals</h2>
+
+  <h3>Project Objectives</h3>
+  <ol>
+    <li>Build a model to predict a person's expected remuneration for any role in the STEM sector based on attribute profiles of the role and the person.</li>
+    <li>Use big data tools to build the model to enable efficient processing of data features comprising extreme cardinality.</li>
+  </ol>
+
+  <h3>Analysis Approach</h3>
+  <p>Using PySpark, PySpark SQL, and Python where appropriate in a Jupyter Notebook:</p>
+  <ol>
+    <li>Create a Spark session on an available cluster and upload the data onto Hadoop Distributed File System.</li>
+    <li>Convert the data into a dataframe ahead of analysis and undertake a data audit and exploratory data analysis to gain insights on the main features.</li>
+    <li>Clean and transform the data as required and build new features.</li>
+    <li>Use Spark ML to create transformers and estimators to build predictive models.</li>
+    <li>Create pipelines to find the best predictive model using different algorithms, different numbers of input features, and hyperparameter tuning.</li>
+    <li>Contemplate what extra steps could make the final model better.</li>
+  </ol>
+
+  <h3>Results/Findings</h3>
+  <ul>
+    <li><strong>The best model</strong> was a Gradient Boosted Trees (GBT) regressor model, which explained 64% of the variance but had a high RMSE.</li>
+    <li>To improve the model, we re-trained the GBT regressor over various numbers of features (10, 20, 30, etc.) using feature importance rankings and tuning hyperparameters via grid search and Spark ML CrossValidator. This increased the explained variance by 0.5 percentage points.</li>
+    <li>Top features in terms of feature importance were generally intuitive:
+      <ul>
+        <li>'Years of experience', 'years at company', and job titles involving 'software engineering' were strong predictors.</li>
+        <li>Working at 'Google', having an 'AI/ML' tag, and holding a 'PhD' correlated with higher remuneration.</li>
+        <li>Unexpectedly, 'location' outside of California had a higher feature ranking than 'location' in California.</li>
+        <li>'Race' and 'gender' had low importance rankings.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <p>cf. code <code>stem-jobs-salary-prediction.ipynb</code></p>
 </div>
 
