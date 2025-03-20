@@ -69,7 +69,7 @@ Using the python packages of pyvis and networkx the graphs were constructed. For
 
 #### d. Calculation of metrics
 
-Using the graphs created the following metrics were calculated for each graph
+The following metrics were calculated for each graph
 
 ##### Network size
 
