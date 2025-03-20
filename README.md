@@ -1,13 +1,7 @@
 ## Twitter graph analysis
 
 <table>
-  <tr>
 
-    <th>China Spy Balloon 2023</th>
-    <th>Eurovision Song Contest 2023</th>
-    <th>Nurses Strike 2023</th>
-    <th>Six Nations Rugby Tournament 2023</th>
-  </tr>
   <tr>
     <td><img src="images/bard.png" width="200" bard></td>
     <td><img src="images/ChinaSpyBalloon.png" width="200"></td>
