@@ -1,10 +1,10 @@
 <table>
   <tr>
-    <th style="vertical-align: top;">Bard Chatbot Launch 2023</th>
-    <th style="vertical-align: top;">China Spy Balloon 2023</th>
-    <th style="vertical-align: top;">Eurovision Song Contest 2023</th>
-    <th style="vertical-align: top;">Nurses Strike of 2023</th>
-    <th style="vertical-align: top;">Six Nations Rugby Tournament 2023</th>
+    <th>Bard Chatbot Launch 2023</th>
+    <th>China Spy Balloon 2023</th>
+    <th>Eurovision Song Contest 2023</th>
+    <th>Nurses Strike 2023</th>
+    <th>Six Nations Rugby Tournament 2023</th>
   </tr>
   <tr>
     <td><img src="images/bard.png" width="200"></td>
