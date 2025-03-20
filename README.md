@@ -12,31 +12,26 @@
     <td>
       <figure>
         <img src="images/bard.png" width="200" alt="Bard Chatbot Launch 2023">
-        <figcaption>Bard Chatbot Launch 2023</figcaption>
       </figure>
     </td>
     <td>
       <figure>
         <img src="images/ChinaSpyBalloon.png" width="200" alt="China Spy Balloon 2023">
-        <figcaption>China Spy Balloon 2023</figcaption>
       </figure>
     </td>
     <td>
       <figure>
         <img src="images/Eurovision.png" width="200" alt="Eurovision Song Contest 2023">
-        <figcaption>Eurovision Song Contest 2023</figcaption>
       </figure>
     </td>
     <td>
       <figure>
         <img src="images/NursesStrike.png" width="200" alt="Nurses Strike of 2023">
-        <figcaption>Nurses Strike of 2023</figcaption>
       </figure>
     </td>
     <td>
       <figure>
         <img src="images/SixNations.png" width="200" alt="Six Nations Rugby Tournament 2023">
-        <figcaption>Six Nations Rugby Tournament 2023</figcaption>
       </figure>
     </td>
   </tr>
