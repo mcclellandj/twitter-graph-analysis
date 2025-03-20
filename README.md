@@ -1,5 +1,3 @@
-## Retweet analysis
-
 <table>
   <tr>
     <td>
@@ -16,14 +14,14 @@
     </td>
     <td style="vertical-align: top; padding-left: 20px; border: none;">
       <p>
-        ## Predicting annual remuneration for STEM professionals
+        Predicting annual remuneration for STEM professionals
         
-        ### Project objectives
+        Project objectives
         
         1. Build a model to predict a person's expected remuneration for any role in the STEM sector based on attribute profiles of the role and the person
         2. Use big data tools to build the model to enable efficient processing of data features comprising extreme cardinality
           
-        ### Analysis approach
+        Analysis approach
         
         Using PySpark, PySpark SQL and Python where appropriate in a Jupyter Notebook to:
         1. Create a Spark session on an available Cluster and upload the data onto Hadoop Distributed File System
@@ -35,7 +33,7 @@
         
         cf. code 'stem-jobs-salary-prediction.ipynb'
         
-        ### Results/findings
+        Results/findings
         
         - The best model was a Gradient Boosted Trees (GBT) regressor model which explained 64% of the variance and had a high RMSE
         - To improve the model tried re-training the GBT regressor over various numbers of features (10, 20, 30,...) using feature importance rankings and tuning the hyperparameters of each using grid search and Spark ML CrossValidator. This increased the explained variance by 0.5 percentage points
