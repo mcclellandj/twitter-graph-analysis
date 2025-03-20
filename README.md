@@ -73,7 +73,7 @@ Using the python packages of pyvis and networkx the graphs were constructed. For
 
 The following metrics were calculated for each graph
 
-##### Network size
+##### a. Network size
 
 Comparing the size of each network enables understanding on much engagement each hashtag conversation has attracted. We can measure the size of each network by the numbers of its users (nodes) and relationships (directed links). Also networks may differ in the proportions of users who are retweeters or users who are retweeted. The metrics considered were:
 
@@ -82,7 +82,7 @@ Comparing the size of each network enables understanding on much engagement each
 - percentage of users who are retweeters
 - percentage of users who are retweeted
 
-##### Network connectivity
+##### b. Network connectivity
 
 Understanding how well connected a network is informs us of how well information could be diffused across it. Some networks may be more dense meaning information can travel to more users while other networks may be more disjointed, comprising separate communities such as echo chambers. In the latter a visualization of a suitable k-core decomposition of the network can help to reveal the structure of its main components. The metrics considered were:
 
@@ -97,7 +97,7 @@ Understanding how well connected a network is informs us of how well information
 - number of nodes in largest weakly connected component
 - average shortest path length of largest weakly connected component
 
-##### Node information diffusion
+##### c. Node information diffusion
 
 Users can retweet various numbers of other users. This information, along with the number of followers of each user has, enables comparisons of networks in terms of their proportion of influencial users and possible bots. Another comparison can be to compare centrality diffusion scores to see if some networks comprise more key users than others. The metrics considered were:
 
