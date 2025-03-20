@@ -41,9 +41,9 @@
 
 Compare the ability of different Twitter graphs to transmit information, namely; 
 
-1. Ability to diffuse information2.
-2. Node and link structure
-3. Use of bots
+1.  Ability to diffuse information2.
+2.  Node and link structure
+3.  Use of bots
 
 The hashtags selected are from different current events from 2023, namely: 
 
