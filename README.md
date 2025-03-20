@@ -37,7 +37,7 @@
   </tr>
 </table>
 
-### Project objectives
+#### Project objectives
 
 Compare the ability of different Twitter graphs to transmit information. Namely, 
 
