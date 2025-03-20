@@ -1,30 +1,13 @@
-<table style="table-layout: fixed; border-collapse: collapse;">
+<table>
   <tr>
-    <td style="width:500px; height:500px; text-align:center; vertical-align:middle; padding:10px;">
-      Bard chatbot launch 2023<br>
-      <img src="images/bard.png" style="width:100%; height:100%; object-fit: cover;">
-    </td>
-    <td style="width:500px; height:500px; text-align:center; vertical-align:middle; padding:10px;">
-      China Spy Balloon 2023<br>
-      <img src="images/ChinaSpyBalloon.png" style="width:100%; height:100%; object-fit: cover;">
-    </td>
-    <td style="width:500px; height:500px; text-align:center; vertical-align:middle; padding:10px;">
-      Eurovision Song Contest 2023<br>
-      <img src="images/Eurovision.png" style="width:100%; height:100%; object-fit: cover;">
-    </td>
-    <td style="width:500px; height:500px; text-align:center; vertical-align:middle; padding:10px;">
-      Nurses Strike of 2023<br>
-      <img src="images/NursesStrike.png" style="width:100%; height:100%; object-fit: cover;">
-    </td>
-    <td style="width:500px; height:500px; text-align:center; vertical-align:middle; padding:10px;">
-      Six Nations Rugby Tournament 2023<br>
-      <img src="images/SixNations.png" style="width:100%; height:100%; object-fit: cover;">
-    </td>
+    <td>Bard chatbot launch 2023<br><img src="images/bard.png" width="500"></td>
+    <td>China Spy Balloon 2023<br><img src="images/ChinaSpyBalloon.png" width="500"></td>
+    <td>Eurovision Song Contest 2023<br><img src="images/Eurovision.png" width="500"></td>
+    <td>Nurses Strike of 2023<br><img src="images/NursesStrike.png" width="500"></td>
+    <td>Six Nations Rugby Tournament 2023<br><img src="images/SixNations.png" width="500"></td>
   </tr>
   <tr>
-    <td colspan="5" style="padding:20px; text-align:left; vertical-align:top;">
-      <!-- Additional content here -->
+    <td colspan="5" style="padding: 20px; text-align: left; vertical-align: top;">
     </td>
   </tr>
 </table>
-
