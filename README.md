@@ -45,7 +45,7 @@ Compare the ability of different Twitter graphs to transmit information. Namely,
 - Node and link structure
 - Use of bots
 
-The hashtags selected are from different current event, namely: 
+The hashtags selected are from different current events from 2023, namely: 
 
 - technology (#bard)
 - international affairs (#ChinaSpyBalloon)
