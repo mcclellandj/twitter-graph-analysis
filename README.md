@@ -2,11 +2,11 @@
 
 <table>
   <tr>
-    <th style="vertical-align: top;">Bard Chatbot Launch 2023</th>
-    <th style="vertical-align: top;">China Spy Balloon 2023</th>
-    <th style="vertical-align: top;">Eurovision Song Contest 2023</th>
-    <th style="vertical-align: top;">Nurses Strike of 2023</th>
-    <th style="vertical-align: top;">Six Nations Rugby Tournament 2023</th>
+    <th style="vertical-align: top;">Bard Chatbot Launch</th>
+    <th style="vertical-align: top;">China Spy Balloon</th>
+    <th style="vertical-align: top;">Eurovision Contest</th>
+    <th style="vertical-align: top;">Nurses Strike</th>
+    <th style="vertical-align: top;">Six Nations Rugby</th>
   </tr>
   <tr>
     <td>
