@@ -1,6 +1,6 @@
 ## Twitter graph analysis
 
-[View the HTML page](https://mcclellandj.github.io/twitter-graph-analysis/bard.html)
+[View the HTML page](https://mcclellandj.github.io/twitter-graph-analysis/bard_k_2_core.html)
 
 <table>
   <tr>
