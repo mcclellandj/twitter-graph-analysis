@@ -1,7 +1,5 @@
 ## Twitter graph analysis
 
-[View page as HTML](https://mcclellandj.github.io/twitter-graph-analysis)
-
 <table>
   <tr>
     <td>
