@@ -1,5 +1,9 @@
 ## Twitter graph analysis
 
+
+
+<img src="#bard_retweet_network.html">
+
 <table>
   <tr>
     <td>
