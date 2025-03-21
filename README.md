@@ -1,6 +1,6 @@
 ## Twitter graph analysis
 
-[View the HTML page](https://mcclellandj.github.io/twitter-graph-analysis/SixNations.html)
+[View page as HTML](https://mcclellandj.github.io/twitter-graph-analysis)
 
 <table>
   <tr>
