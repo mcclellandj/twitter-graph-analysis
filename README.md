@@ -1,8 +1,6 @@
 ## Twitter graph analysis
 
-[View the HTML page](https://mcclellandj.github.io/twitter-graph-analysis/bard_retweet_network.html)
-
-<img src="#bard_retweet_network.html">
+[View the HTML page](https://mcclellandj.github.io/twitter-graph-analysis/bard.html)
 
 <table>
   <tr>
