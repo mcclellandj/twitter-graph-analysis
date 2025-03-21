@@ -1,0 +1,171 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 1000px;
+                 height: 1000px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+             #config {
+                 float: left;
+                 width: 400px;
+                 height: 600px;
+             }
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+            <div id="config"></div>
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"followers": 1091, "group": 3, "id": "JinibaBD", "label": "JinibaBD", "shape": "dot", "size": 6}, {"followers": 38713, "group": 2, "id": "CyberSecurityN8", "label": "CyberSecurityN8", "shape": "dot", "size": 10}, {"followers": 44812, "group": 2, "id": "sectest9", "label": "sectest9", "shape": "dot", "size": 10}, {"followers": 233, "group": 3, "id": "dominicfrei", "label": "dominicfrei", "shape": "dot", "size": 5}, {"followers": 7, "group": 2, "id": "HarshEntrepre", "label": "HarshEntrepre", "shape": "dot", "size": 1}, {"followers": 574, "group": 1, "id": "theWordofMentor", "label": "theWordofMentor", "shape": "dot", "size": 6}, {"followers": 70, "group": 2, "id": "Geek_alphaomega", "label": "Geek_alphaomega", "shape": "dot", "size": 4}, {"followers": 43432, "group": 3, "id": "stratorob", "label": "stratorob", "shape": "dot", "size": 10}, {"followers": 176, "group": 2, "id": "SlothGPT", "label": "SlothGPT", "shape": "dot", "size": 5}, {"followers": 44, "group": 2, "id": "RettiwtTob", "label": "RettiwtTob", "shape": "dot", "size": 3}, {"followers": 63171, "group": 3, "id": "FrRonconi", "label": "FrRonconi", "shape": "dot", "size": 11}, {"followers": 999, "group": 2, "id": "galactic_ditto", "label": "galactic_ditto", "shape": "dot", "size": 6}, {"followers": 15783, "group": 3, "id": "samdecker", "label": "samdecker", "shape": "dot", "size": 9}, {"followers": 8160, "group": 2, "id": "gdprAI", "label": "gdprAI", "shape": "dot", "size": 9}, {"followers": 1568, "group": 2, "id": "uCloudifyAI", "label": "uCloudifyAI", "shape": "dot", "size": 7}, {"followers": 904, "group": 3, "id": "sundaymidday", "label": "sundaymidday", "shape": "dot", "size": 6}, {"followers": 121, "group": 1, "id": "Agoooooo12", "label": "Agoooooo12", "shape": "dot", "size": 4}, {"followers": 8, "group": 2, "id": "mercy_135", "label": "mercy_135", "shape": "dot", "size": 2}, {"followers": 203, "group": 2, "id": "Crypto_JME", "label": "Crypto_JME", "shape": "dot", "size": 5}, {"followers": 48, "group": 2, "id": "YEER_CRYPTO", "label": "YEER_CRYPTO", "shape": "dot", "size": 3}, {"followers": 63, "group": 2, "id": "Jonatha20282903", "label": "Jonatha20282903", "shape": "dot", "size": 4}, {"followers": 121, "group": 2, "id": "NorgateVelda", "label": "NorgateVelda", "shape": "dot", "size": 4}, {"followers": 135, "group": 2, "id": "Nevidim55364986", "label": "Nevidim55364986", "shape": "dot", "size": 4}, {"followers": 114, "group": 2, "id": "Nerd99999999991", "label": "Nerd99999999991", "shape": "dot", "size": 4}, {"followers": 123, "group": 2, "id": "Nancie91257989", "label": "Nancie91257989", "shape": "dot", "size": 4}, {"followers": 60, "group": 2, "id": "gangstaaazzz", "label": "gangstaaazzz", "shape": "dot", "size": 4}, {"followers": 135, "group": 1, "id": "Cordie74251867", "label": "Cordie74251867", "shape": "dot", "size": 4}, {"followers": 234, "group": 1, "id": "Aungthu28079089", "label": "Aungthu28079089", "shape": "dot", "size": 5}, {"followers": 103, "group": 2, "id": "Mister_jang007", "label": "Mister_jang007", "shape": "dot", "size": 4}, {"followers": 34293, "group": 3, "id": "bamitav", "label": "bamitav", "shape": "dot", "size": 10}, {"followers": 3425, "group": 2, "id": "PythonRoboto", "label": "PythonRoboto", "shape": "dot", "size": 8}, {"followers": 4884, "group": 3, "id": "MythofMoney", "label": "MythofMoney", "shape": "dot", "size": 8}, {"followers": 169, "group": 2, "id": "Analogique2018", "label": "Analogique2018", "shape": "dot", "size": 5}, {"followers": 3589, "group": 1, "id": "Yakiseo", "label": "Yakiseo", "shape": "dot", "size": 8}, {"followers": 5, "group": 2, "id": "GernaeyG", "label": "GernaeyG", "shape": "dot", "size": 1}, {"followers": 13, "group": 2, "id": "crptoaddict", "label": "crptoaddict", "shape": "dot", "size": 2}, {"followers": 120, "group": 2, "id": "blindstoys", "label": "blindstoys", "shape": "dot", "size": 4}, {"followers": 7, "group": 1, "id": "shachisolanki07", "label": "shachisolanki07", "shape": "dot", "size": 1}, {"followers": 1037, "group": 2, "id": "DeepStrat_LLP", "label": "DeepStrat_LLP", "shape": "dot", "size": 6}, {"followers": 154031, "group": 1, "id": "saikatd", "label": "saikatd", "shape": "dot", "size": 11}, {"followers": 9002, "group": 3, "id": "MrSoroushAhmadi", "label": "MrSoroushAhmadi", "shape": "dot", "size": 9}, {"followers": 191, "group": 2, "id": "AKDocHBarbarosa", "label": "AKDocHBarbarosa", "shape": "dot", "size": 5}, {"followers": 152, "group": 2, "id": "AjithVlogger", "label": "AjithVlogger", "shape": "dot", "size": 5}, {"followers": 2498, "group": 3, "id": "jumalaw98", "label": "jumalaw98", "shape": "dot", "size": 7}, {"followers": 108, "group": 2, "id": "dev_prOf3ss0r", "label": "dev_prOf3ss0r", "shape": "dot", "size": 4}, {"followers": 7019, "group": 3, "id": "rajeevanandspur", "label": "rajeevanandspur", "shape": "dot", "size": 8}, {"followers": 74692, "group": 3, "id": "JohnNosta", "label": "JohnNosta", "shape": "dot", "size": 11}, {"followers": 140886, "group": 2, "id": "rwang0", "label": "rwang0", "shape": "dot", "size": 11}, {"followers": 4693, "group": 1, "id": "richardkimphd", "label": "richardkimphd", "shape": "dot", "size": 8}, {"followers": 18647, "group": 3, "id": "AudreyDesisto", "label": "AudreyDesisto", "shape": "dot", "size": 9}, {"followers": 395, "group": 3, "id": "thenewsdrum", "label": "thenewsdrum", "shape": "dot", "size": 5}, {"followers": 1275, "group": 2, "id": "askN0B0DY", "label": "askN0B0DY", "shape": "dot", "size": 7}, {"followers": 1, "group": 3, "id": "Baronbeen002", "label": "Baronbeen002", "shape": "dot", "size": 0}, {"followers": 156, "group": 2, "id": "Trisnayola", "label": "Trisnayola", "shape": "dot", "size": 5}, {"followers": 7, "group": 2, "id": "Petri88885438", "label": "Petri88885438", "shape": "dot", "size": 1}, {"followers": 34, "group": 2, "id": "BizzyAndrea", "label": "BizzyAndrea", "shape": "dot", "size": 3}, {"followers": 870, "group": 2, "id": "billa013", "label": "billa013", "shape": "dot", "size": 6}, {"followers": 27, "group": 2, "id": "martingarcia625", "label": "martingarcia625", "shape": "dot", "size": 3}, {"followers": 133, "group": 2, "id": "Arutic1", "label": "Arutic1", "shape": "dot", "size": 4}, {"followers": 54, "group": 2, "id": "ramonraoul92", "label": "ramonraoul92", "shape": "dot", "size": 3}, {"followers": 21, "group": 2, "id": "dannyg813", "label": "dannyg813", "shape": "dot", "size": 3}, {"followers": 15, "group": 2, "id": "mufius_", "label": "mufius_", "shape": "dot", "size": 2}, {"followers": 22, "group": 2, "id": "WannaBeCking", "label": "WannaBeCking", "shape": "dot", "size": 3}, {"followers": 112, "group": 2, "id": "azizanaqie", "label": "azizanaqie", "shape": "dot", "size": 4}, {"followers": 108, "group": 2, "id": "Mudassi20131989", "label": "Mudassi20131989", "shape": "dot", "size": 4}, {"followers": 1342, "group": 2, "id": "Nacho41027246", "label": "Nacho41027246", "shape": "dot", "size": 7}, {"followers": 14, "group": 2, "id": "vaidotaszx", "label": "vaidotaszx", "shape": "dot", "size": 2}, {"followers": 129, "group": 2, "id": "Zenzain16", "label": "Zenzain16", "shape": "dot", "size": 4}, {"followers": 12, "group": 2, "id": "Guy_cRYptO0", "label": "Guy_cRYptO0", "shape": "dot", "size": 2}, {"followers": 867, "group": 1, "id": "RemcoWIZ", "label": "RemcoWIZ", "shape": "dot", "size": 6}, {"followers": 99, "group": 3, "id": "Ayesha13457863", "label": "Ayesha13457863", "shape": "dot", "size": 4}, {"followers": 13, "group": 2, "id": "NeerajS94885155", "label": "NeerajS94885155", "shape": "dot", "size": 2}, {"followers": 22, "group": 2, "id": "manpree1893120", "label": "manpree1893120", "shape": "dot", "size": 3}, {"followers": 64529, "group": 3, "id": "lilyraynyc", "label": "lilyraynyc", "shape": "dot", "size": 11}, {"followers": 9462, "group": 2, "id": "davidiwanow", "label": "davidiwanow", "shape": "dot", "size": 9}, {"followers": 260, "group": 2, "id": "12MonkeysApp", "label": "12MonkeysApp", "shape": "dot", "size": 5}, {"followers": 80, "group": 3, "id": "bibinbabuonline", "label": "bibinbabuonline", "shape": "dot", "size": 4}, {"followers": 225, "group": 3, "id": "mindkosh", "label": "mindkosh", "shape": "dot", "size": 5}, {"followers": 5820, "group": 1, "id": "tsetiady", "label": "tsetiady", "shape": "dot", "size": 8}, {"followers": 1372799, "group": 3, "id": "moneycontrolcom", "label": "moneycontrolcom", "shape": "dot", "size": 14}, {"followers": 1043, "group": 2, "id": "dennymades", "label": "dennymades", "shape": "dot", "size": 6}, {"followers": 828, "group": 3, "id": "DeFiNames", "label": "DeFiNames", "shape": "dot", "size": 6}, {"followers": 5467, "group": 2, "id": "rahul05ranjan", "label": "rahul05ranjan", "shape": "dot", "size": 8}, {"followers": 1193, "group": 3, "id": "phanor", "label": "phanor", "shape": "dot", "size": 7}, {"followers": 196, "group": 3, "id": "GoogleAI3", "label": "GoogleAI3", "shape": "dot", "size": 5}, {"followers": 99, "group": 2, "id": "CryptoGertje", "label": "CryptoGertje", "shape": "dot", "size": 4}, {"followers": 778, "group": 3, "id": "AIMLDS", "label": "AIMLDS", "shape": "dot", "size": 6}, {"followers": 9524, "group": 2, "id": "Calcaware", "label": "Calcaware", "shape": "dot", "size": 9}, {"followers": 54, "group": 3, "id": "futilereality", "label": "futilereality", "shape": "dot", "size": 3}, {"followers": 5830, "group": 2, "id": "S_agarM_agar", "label": "S_agarM_agar", "shape": "dot", "size": 8}, {"followers": 1807, "group": 3, "id": "mageed", "label": "mageed", "shape": "dot", "size": 7}, {"followers": 205, "group": 2, "id": "SettleNevermore", "label": "SettleNevermore", "shape": "dot", "size": 5}, {"followers": 453, "group": 3, "id": "Strategic_Conn", "label": "Strategic_Conn", "shape": "dot", "size": 6}, {"followers": 4935, "group": 3, "id": "shyamvaran", "label": "shyamvaran", "shape": "dot", "size": 8}, {"followers": 4746665, "group": 3, "id": "CNNnews18", "label": "CNNnews18", "shape": "dot", "size": 15}, {"followers": 323, "group": 2, "id": "Bhaswati19Guha", "label": "Bhaswati19Guha", "shape": "dot", "size": 5}, {"followers": 59882, "group": 1, "id": "AmanKayamHai_", "label": "AmanKayamHai_", "shape": "dot", "size": 11}, {"followers": 641, "group": 3, "id": "Abhishe27960014", "label": "Abhishe27960014", "shape": "dot", "size": 6}, {"followers": 3298, "group": 3, "id": "Netanel", "label": "Netanel", "shape": "dot", "size": 8}, {"followers": 127526, "group": 3, "id": "SpirosMargaris", "label": "SpirosMargaris", "shape": "dot", "size": 11}, {"followers": 36, "group": 3, "id": "InfotechKriyan", "label": "InfotechKriyan", "shape": "dot", "size": 3}, {"followers": 2576, "group": 3, "id": "adridder", "label": "adridder", "shape": "dot", "size": 7}, {"followers": 150, "group": 2, "id": "AnkitJaitlySEO", "label": "AnkitJaitlySEO", "shape": "dot", "size": 5}, {"followers": 9, "group": 3, "id": "vvphadnis", "label": "vvphadnis", "shape": "dot", "size": 2}, {"followers": 111, "group": 3, "id": "nishu96945170", "label": "nishu96945170", "shape": "dot", "size": 4}, {"followers": 62953, "group": 3, "id": "DataChaz", "label": "DataChaz", "shape": "dot", "size": 11}, {"followers": 1341, "group": 3, "id": "FernandoHidalg0", "label": "FernandoHidalg0", "shape": "dot", "size": 7}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "grey", "from": "JinibaBD", "to": "CyberSecurityN8", "width": 1}, {"arrows": "to", "color": "grey", "from": "JinibaBD", "to": "sectest9", "width": 1}, {"arrows": "to", "color": "grey", "from": "dominicfrei", "to": "HarshEntrepre", "width": 1}, {"arrows": "to", "color": "grey", "from": "dominicfrei", "to": "theWordofMentor", "width": 1}, {"arrows": "to", "color": "grey", "from": "dominicfrei", "to": "Geek_alphaomega", "width": 1}, {"arrows": "to", "color": "grey", "from": "stratorob", "to": "SlothGPT", "width": 1}, {"arrows": "to", "color": "grey", "from": "stratorob", "to": "RettiwtTob", "width": 1}, {"arrows": "to", "color": "grey", "from": "FrRonconi", "to": "galactic_ditto", "width": 1}, {"arrows": "to", "color": "grey", "from": "FrRonconi", "to": "SlothGPT", "width": 1}, {"arrows": "to", "color": "grey", "from": "samdecker", "to": "gdprAI", "width": 1}, {"arrows": "to", "color": "grey", "from": "samdecker", "to": "uCloudifyAI", "width": 1}, {"arrows": "to", "color": "grey", "from": "sundaymidday", "to": "CyberSecurityN8", "width": 1}, {"arrows": "to", "color": "grey", "from": "sundaymidday", "to": "uCloudifyAI", "width": 1}, {"arrows": "to", "color": "grey", "from": "Agoooooo12", "to": "mercy_135", "width": 1}, {"arrows": "to", "color": "grey", "from": "Agoooooo12", "to": "Crypto_JME", "width": 1}, {"arrows": "to", "color": "grey", "from": "Agoooooo12", "to": "YEER_CRYPTO", "width": 1}, {"arrows": "to", "color": "grey", "from": "Agoooooo12", "to": "Jonatha20282903", "width": 1}, {"arrows": "to", "color": "grey", "from": "Agoooooo12", "to": "NorgateVelda", "width": 1}, {"arrows": "to", "color": "grey", "from": "Agoooooo12", "to": "Nevidim55364986", "width": 1}, {"arrows": "to", "color": "grey", "from": "Agoooooo12", "to": "Nerd99999999991", "width": 1}, {"arrows": "to", "color": "grey", "from": "Agoooooo12", "to": "Nancie91257989", "width": 1}, {"arrows": "to", "color": "grey", "from": "Agoooooo12", "to": "gangstaaazzz", "width": 1}, {"arrows": "to", "color": "grey", "from": "Agoooooo12", "to": "Cordie74251867", "width": 1}, {"arrows": "to", "color": "grey", "from": "Agoooooo12", "to": "Aungthu28079089", "width": 1}, {"arrows": "to", "color": "grey", "from": "Agoooooo12", "to": "Mister_jang007", "width": 1}, {"arrows": "to", "color": "grey", "from": "bamitav", "to": "PythonRoboto", "width": 1}, {"arrows": "to", "color": "grey", "from": "bamitav", "to": "galactic_ditto", "width": 1}, {"arrows": "to", "color": "grey", "from": "MythofMoney", "to": "Analogique2018", "width": 1}, {"arrows": "to", "color": "grey", "from": "MythofMoney", "to": "uCloudifyAI", "width": 1}, {"arrows": "to", "color": "grey", "from": "Yakiseo", "to": "uCloudifyAI", "width": 1}, {"arrows": "to", "color": "grey", "from": "Cordie74251867", "to": "GernaeyG", "width": 1}, {"arrows": "to", "color": "grey", "from": "Cordie74251867", "to": "Jonatha20282903", "width": 1}, {"arrows": "to", "color": "grey", "from": "Cordie74251867", "to": "Crypto_JME", "width": 1}, {"arrows": "to", "color": "grey", "from": "Cordie74251867", "to": "Mister_jang007", "width": 1}, {"arrows": "to", "color": "grey", "from": "Cordie74251867", "to": "Agoooooo12", "width": 1}, {"arrows": "to", "color": "grey", "from": "Cordie74251867", "to": "mercy_135", "width": 1}, {"arrows": "to", "color": "grey", "from": "Cordie74251867", "to": "Aungthu28079089", "width": 1}, {"arrows": "to", "color": "grey", "from": "Cordie74251867", "to": "crptoaddict", "width": 1}, {"arrows": "to", "color": "grey", "from": "Cordie74251867", "to": "blindstoys", "width": 1}, {"arrows": "to", "color": "grey", "from": "Cordie74251867", "to": "YEER_CRYPTO", "width": 1}, {"arrows": "to", "color": "grey", "from": "shachisolanki07", "to": "DeepStrat_LLP", "width": 1}, {"arrows": "to", "color": "grey", "from": "shachisolanki07", "to": "saikatd", "width": 1}, {"arrows": "to", "color": "grey", "from": "MrSoroushAhmadi", "to": "AKDocHBarbarosa", "width": 1}, {"arrows": "to", "color": "grey", "from": "MrSoroushAhmadi", "to": "AjithVlogger", "width": 1}, {"arrows": "to", "color": "grey", "from": "jumalaw98", "to": "AKDocHBarbarosa", "width": 1}, {"arrows": "to", "color": "grey", "from": "jumalaw98", "to": "dev_prOf3ss0r", "width": 1}, {"arrows": "to", "color": "grey", "from": "rajeevanandspur", "to": "Analogique2018", "width": 1}, {"arrows": "to", "color": "grey", "from": "rajeevanandspur", "to": "uCloudifyAI", "width": 1}, {"arrows": "to", "color": "grey", "from": "JohnNosta", "to": "rwang0", "width": 1}, {"arrows": "to", "color": "grey", "from": "JohnNosta", "to": "uCloudifyAI", "width": 1}, {"arrows": "to", "color": "grey", "from": "richardkimphd", "to": "gdprAI", "width": 1}, {"arrows": "to", "color": "grey", "from": "richardkimphd", "to": "SlothGPT", "width": 1}, {"arrows": "to", "color": "grey", "from": "AudreyDesisto", "to": "PythonRoboto", "width": 1}, {"arrows": "to", "color": "grey", "from": "AudreyDesisto", "to": "RettiwtTob", "width": 1}, {"arrows": "to", "color": "grey", "from": "thenewsdrum", "to": "CyberSecurityN8", "width": 1}, {"arrows": "to", "color": "grey", "from": "thenewsdrum", "to": "askN0B0DY", "width": 1}, {"arrows": "to", "color": "grey", "from": "thenewsdrum", "to": "sectest9", "width": 1}, {"arrows": "to", "color": "grey", "from": "Baronbeen002", "to": "Trisnayola", "width": 1}, {"arrows": "to", "color": "grey", "from": "Baronbeen002", "to": "Petri88885438", "width": 1}, {"arrows": "to", "color": "grey", "from": "Baronbeen002", "to": "BizzyAndrea", "width": 1}, {"arrows": "to", "color": "grey", "from": "Baronbeen002", "to": "billa013", "width": 1}, {"arrows": "to", "color": "grey", "from": "Baronbeen002", "to": "martingarcia625", "width": 1}, {"arrows": "to", "color": "grey", "from": "Baronbeen002", "to": "Arutic1", "width": 1}, {"arrows": "to", "color": "grey", "from": "Baronbeen002", "to": "ramonraoul92", "width": 1}, {"arrows": "to", "color": "grey", "from": "Baronbeen002", "to": "dannyg813", "width": 1}, {"arrows": "to", "color": "grey", "from": "Baronbeen002", "to": "mufius_", "width": 1}, {"arrows": "to", "color": "grey", "from": "Baronbeen002", "to": "WannaBeCking", "width": 1}, {"arrows": "to", "color": "grey", "from": "Baronbeen002", "to": "azizanaqie", "width": 1}, {"arrows": "to", "color": "grey", "from": "Baronbeen002", "to": "Mudassi20131989", "width": 1}, {"arrows": "to", "color": "grey", "from": "Baronbeen002", "to": "Nacho41027246", "width": 1}, {"arrows": "to", "color": "grey", "from": "Baronbeen002", "to": "vaidotaszx", "width": 1}, {"arrows": "to", "color": "grey", "from": "Baronbeen002", "to": "Zenzain16", "width": 1}, {"arrows": "to", "color": "grey", "from": "Baronbeen002", "to": "Guy_cRYptO0", "width": 1}, {"arrows": "to", "color": "grey", "from": "Baronbeen002", "to": "RemcoWIZ", "width": 1}, {"arrows": "to", "color": "grey", "from": "Ayesha13457863", "to": "NeerajS94885155", "width": 1}, {"arrows": "to", "color": "grey", "from": "Ayesha13457863", "to": "manpree1893120", "width": 1}, {"arrows": "to", "color": "grey", "from": "lilyraynyc", "to": "davidiwanow", "width": 1}, {"arrows": "to", "color": "grey", "from": "lilyraynyc", "to": "12MonkeysApp", "width": 1}, {"arrows": "to", "color": "grey", "from": "lilyraynyc", "to": "Yakiseo", "width": 1}, {"arrows": "to", "color": "grey", "from": "bibinbabuonline", "to": "HarshEntrepre", "width": 1}, {"arrows": "to", "color": "grey", "from": "bibinbabuonline", "to": "Analogique2018", "width": 1}, {"arrows": "to", "color": "grey", "from": "bibinbabuonline", "to": "dev_prOf3ss0r", "width": 1}, {"arrows": "to", "color": "grey", "from": "mindkosh", "to": "galactic_ditto", "width": 1}, {"arrows": "to", "color": "grey", "from": "mindkosh", "to": "tsetiady", "width": 1}, {"arrows": "to", "color": "grey", "from": "moneycontrolcom", "to": "gdprAI", "width": 1}, {"arrows": "to", "color": "grey", "from": "moneycontrolcom", "to": "dennymades", "width": 1}, {"arrows": "to", "color": "grey", "from": "moneycontrolcom", "to": "saikatd", "width": 1}, {"arrows": "to", "color": "grey", "from": "DeFiNames", "to": "galactic_ditto", "width": 1}, {"arrows": "to", "color": "grey", "from": "DeFiNames", "to": "SlothGPT", "width": 1}, {"arrows": "to", "color": "grey", "from": "DeFiNames", "to": "rahul05ranjan", "width": 1}, {"arrows": "to", "color": "grey", "from": "phanor", "to": "SlothGPT", "width": 1}, {"arrows": "to", "color": "grey", "from": "phanor", "to": "uCloudifyAI", "width": 1}, {"arrows": "to", "color": "grey", "from": "GoogleAI3", "to": "Petri88885438", "width": 1}, {"arrows": "to", "color": "grey", "from": "GoogleAI3", "to": "azizanaqie", "width": 1}, {"arrows": "to", "color": "grey", "from": "GoogleAI3", "to": "billa013", "width": 1}, {"arrows": "to", "color": "grey", "from": "GoogleAI3", "to": "Zenzain16", "width": 1}, {"arrows": "to", "color": "grey", "from": "GoogleAI3", "to": "WannaBeCking", "width": 1}, {"arrows": "to", "color": "grey", "from": "GoogleAI3", "to": "martingarcia625", "width": 1}, {"arrows": "to", "color": "grey", "from": "GoogleAI3", "to": "vaidotaszx", "width": 1}, {"arrows": "to", "color": "grey", "from": "GoogleAI3", "to": "Mudassi20131989", "width": 1}, {"arrows": "to", "color": "grey", "from": "GoogleAI3", "to": "Trisnayola", "width": 1}, {"arrows": "to", "color": "grey", "from": "GoogleAI3", "to": "dannyg813", "width": 1}, {"arrows": "to", "color": "grey", "from": "GoogleAI3", "to": "ramonraoul92", "width": 1}, {"arrows": "to", "color": "grey", "from": "GoogleAI3", "to": "Guy_cRYptO0", "width": 1}, {"arrows": "to", "color": "grey", "from": "GoogleAI3", "to": "Nacho41027246", "width": 1}, {"arrows": "to", "color": "grey", "from": "GoogleAI3", "to": "Arutic1", "width": 1}, {"arrows": "to", "color": "grey", "from": "GoogleAI3", "to": "mufius_", "width": 1}, {"arrows": "to", "color": "grey", "from": "GoogleAI3", "to": "RemcoWIZ", "width": 1}, {"arrows": "to", "color": "grey", "from": "GoogleAI3", "to": "BizzyAndrea", "width": 1}, {"arrows": "to", "color": "grey", "from": "GoogleAI3", "to": "CryptoGertje", "width": 1}, {"arrows": "to", "color": "grey", "from": "AIMLDS", "to": "Calcaware", "width": 1}, {"arrows": "to", "color": "grey", "from": "AIMLDS", "to": "uCloudifyAI", "width": 1}, {"arrows": "to", "color": "grey", "from": "futilereality", "to": "S_agarM_agar", "width": 1}, {"arrows": "to", "color": "grey", "from": "futilereality", "to": "uCloudifyAI", "width": 1}, {"arrows": "to", "color": "grey", "from": "mageed", "to": "AKDocHBarbarosa", "width": 1}, {"arrows": "to", "color": "grey", "from": "mageed", "to": "SettleNevermore", "width": 1}, {"arrows": "to", "color": "grey", "from": "mageed", "to": "HarshEntrepre", "width": 1}, {"arrows": "to", "color": "grey", "from": "tsetiady", "to": "uCloudifyAI", "width": 1}, {"arrows": "to", "color": "grey", "from": "Strategic_Conn", "to": "Calcaware", "width": 1}, {"arrows": "to", "color": "grey", "from": "Strategic_Conn", "to": "uCloudifyAI", "width": 1}, {"arrows": "to", "color": "grey", "from": "shyamvaran", "to": "rwang0", "width": 1}, {"arrows": "to", "color": "grey", "from": "shyamvaran", "to": "uCloudifyAI", "width": 1}, {"arrows": "to", "color": "grey", "from": "CNNnews18", "to": "Bhaswati19Guha", "width": 1}, {"arrows": "to", "color": "grey", "from": "CNNnews18", "to": "AmanKayamHai_", "width": 1}, {"arrows": "to", "color": "grey", "from": "Abhishe27960014", "to": "Analogique2018", "width": 1}, {"arrows": "to", "color": "grey", "from": "Abhishe27960014", "to": "SettleNevermore", "width": 1}, {"arrows": "to", "color": "grey", "from": "Netanel", "to": "AKDocHBarbarosa", "width": 1}, {"arrows": "to", "color": "grey", "from": "Netanel", "to": "davidiwanow", "width": 1}, {"arrows": "to", "color": "grey", "from": "saikatd", "to": "dennymades", "width": 1}, {"arrows": "to", "color": "grey", "from": "saikatd", "to": "shachisolanki07", "width": 1}, {"arrows": "to", "color": "grey", "from": "saikatd", "to": "richardkimphd", "width": 1}, {"arrows": "to", "color": "grey", "from": "saikatd", "to": "DeepStrat_LLP", "width": 1}, {"arrows": "to", "color": "grey", "from": "SpirosMargaris", "to": "Analogique2018", "width": 1}, {"arrows": "to", "color": "grey", "from": "SpirosMargaris", "to": "askN0B0DY", "width": 1}, {"arrows": "to", "color": "grey", "from": "InfotechKriyan", "to": "uCloudifyAI", "width": 1}, {"arrows": "to", "color": "grey", "from": "InfotechKriyan", "to": "Analogique2018", "width": 1}, {"arrows": "to", "color": "grey", "from": "adridder", "to": "AnkitJaitlySEO", "width": 1}, {"arrows": "to", "color": "grey", "from": "adridder", "to": "AKDocHBarbarosa", "width": 1}, {"arrows": "to", "color": "grey", "from": "theWordofMentor", "to": "Geek_alphaomega", "width": 1}, {"arrows": "to", "color": "grey", "from": "theWordofMentor", "to": "rahul05ranjan", "width": 1}, {"arrows": "to", "color": "grey", "from": "RemcoWIZ", "to": "CryptoGertje", "width": 1}, {"arrows": "to", "color": "grey", "from": "RemcoWIZ", "to": "BizzyAndrea", "width": 1}, {"arrows": "to", "color": "grey", "from": "vvphadnis", "to": "S_agarM_agar", "width": 1}, {"arrows": "to", "color": "grey", "from": "vvphadnis", "to": "Analogique2018", "width": 1}, {"arrows": "to", "color": "grey", "from": "nishu96945170", "to": "NeerajS94885155", "width": 1}, {"arrows": "to", "color": "grey", "from": "nishu96945170", "to": "manpree1893120", "width": 1}, {"arrows": "to", "color": "grey", "from": "DataChaz", "to": "AnkitJaitlySEO", "width": 1}, {"arrows": "to", "color": "grey", "from": "DataChaz", "to": "AKDocHBarbarosa", "width": 1}, {"arrows": "to", "color": "grey", "from": "DataChaz", "to": "12MonkeysApp", "width": 1}, {"arrows": "to", "color": "grey", "from": "DataChaz", "to": "AjithVlogger", "width": 1}, {"arrows": "to", "color": "grey", "from": "AmanKayamHai_", "to": "Bhaswati19Guha", "width": 1}, {"arrows": "to", "color": "grey", "from": "Aungthu28079089", "to": "GernaeyG", "width": 1}, {"arrows": "to", "color": "grey", "from": "Aungthu28079089", "to": "YEER_CRYPTO", "width": 1}, {"arrows": "to", "color": "grey", "from": "Aungthu28079089", "to": "NorgateVelda", "width": 1}, {"arrows": "to", "color": "grey", "from": "Aungthu28079089", "to": "Nevidim55364986", "width": 1}, {"arrows": "to", "color": "grey", "from": "Aungthu28079089", "to": "Nerd99999999991", "width": 1}, {"arrows": "to", "color": "grey", "from": "Aungthu28079089", "to": "crptoaddict", "width": 1}, {"arrows": "to", "color": "grey", "from": "Aungthu28079089", "to": "Nancie91257989", "width": 1}, {"arrows": "to", "color": "grey", "from": "Aungthu28079089", "to": "gangstaaazzz", "width": 1}, {"arrows": "to", "color": "grey", "from": "Aungthu28079089", "to": "Crypto_JME", "width": 1}, {"arrows": "to", "color": "grey", "from": "Aungthu28079089", "to": "mercy_135", "width": 1}, {"arrows": "to", "color": "grey", "from": "Aungthu28079089", "to": "Cordie74251867", "width": 1}, {"arrows": "to", "color": "grey", "from": "Aungthu28079089", "to": "blindstoys", "width": 1}, {"arrows": "to", "color": "grey", "from": "Aungthu28079089", "to": "Agoooooo12", "width": 1}, {"arrows": "to", "color": "grey", "from": "FernandoHidalg0", "to": "tsetiady", "width": 1}, {"arrows": "to", "color": "grey", "from": "FernandoHidalg0", "to": "galactic_ditto", "width": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": true,
+        "filter": [
+            "physics",
+            "interaction"
+        ]
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": false,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+                  // if this network requires displaying the configure window,
+                  // put it in its div
+                  options.configure["container"] = document.getElementById("config");
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
