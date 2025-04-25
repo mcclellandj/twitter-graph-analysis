@@ -29,10 +29,10 @@
     </td>
   </tr>
     <tr>
-    <th>Bard Chatbot Launch</th>
-    <th>China Spy Balloon</th>
+    <th>Bard launch</th>
+    <th>China spy balloon</th>
     <th>Eurovision Contest</th>
-    <th>Nurses Strike</th>
+    <th>Nurses strike</th>
     <th>Six Nations Rugby</th>
   </tr>
 </table>
