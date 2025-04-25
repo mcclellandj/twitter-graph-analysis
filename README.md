@@ -4,12 +4,12 @@
   <tr>
     <td>
       <figure>
-        <img src="images/bard.png" width="200" alt="Bard Chatbot Launch">
+        <img src="images/bard.png" width="200" alt="Bard launch">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="images/ChinaSpyBalloon.png" width="200" alt="China Spy Balloon">
+        <img src="images/ChinaSpyBalloon.png" width="200" alt="China spy balloon">
       </figure>
     </td>
     <td>
@@ -19,7 +19,7 @@
     </td>
     <td>
       <figure>
-        <img src="images/NursesStrike.png" width="200" alt="Nurses Strike">
+        <img src="images/NursesStrike.png" width="200" alt="Nurses strike">
       </figure>
     </td>
     <td>
